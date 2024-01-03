@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Pricing Table</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to bottom right, #000000, #333333);
+            color: #fff;
+        }
+
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+            max-width: 800px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .pricing-column {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            box-sizing: border-box;
+        }
+
+        .pricing-column:hover {
+            transform: scale(1.05);
+        }
+
+        .pricing-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .feature-list li {
+            margin: 10px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            background: #4e54c8;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background: #35449e;
+        }
+        @media (max-width: 1250px) {
+      .pricing-table {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+    </style>
+</head>
+<body>
+
+    <div class="pricing-table">
+        <!-- Pricing Column 1 -->
+        <div class="pricing-column">
+            <div class="pricing-header">Basic</div>
+            <div class="price">$11.99/month</div>
+            <ul class="feature-list">
+              <li>✅ 10GB Storage</li>
+              <li>✅ 1 User</li>
+              <li>🚫 Support</li>
+            </ul>
+            <a href="#" class="button">Sign-In</a>
+        </div>
+
+        <!-- Pricing Column 2 -->
+        <div class="pricing-column">
+            <div class="pricing-header">Pro</div>
+            <div class="price">$19.99/month</div>
+            <ul class="feature-list">
+              <li>✅ 50GB Storage</li>
+              <li>✅ 5 Users</li>
+              <li>✅ Phone &amp; Email Support</li>
+            </ul>
+            <a href="#" class="button">Sign-In</a>
+        </div>
+
+        <!-- Pricing Column 3 -->
+        <div class="pricing-column">
+            <div class="pricing-header">Premium</div>
+            <div class="price">$49.99/month</div>
+            <ul class="feature-list">
+              <li>✅ 100GB Storage</li>
+              <li>✅ 10 Users</li>
+              <li>✅ 24/7 Support</li>
+            </ul>
+            <a href="#" class="button">Sign</a>
+        </div>
+    </div>
+
+</body>
+</html>
